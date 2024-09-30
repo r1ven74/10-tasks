@@ -61,6 +61,49 @@ try:
 except ValueError:
     print("введи число")
 
+#7
+try:
+    num = int(input('Введите число'))
+    if num < 10:
+        print('Меньше 10')
+    elif num > 9 < 21:
+        print('Между 10 и 20')
+    elif num > 20:
+        print("Больше 20")
+except(ValueError):
+    print('введи число')
+#8
+password = input('Введите пароль')
+if password == 'password2323':
+    print("Доступ разрешен")
+else:
+    print("Доступ запрещен")
+#9
+try:
+    num = int(input('Введите число'))
+    if num % 400 == 0 or num % 4 == 0 and num % 100 != 0:
+        print('Високосный')
+    else:
+        print('Не високосный')
+except(ValueError):
+    print('Введите число')
+#10
+try:
+    num = int(input('Введите число'))
+    num_2 = int(input('Введите число'))
+    num_3 = int(input('Введите число'))
+    if num > num_2:
+        if num > num_3:
+            print(num)
+        else:
+            print(num_3)
+    elif num_2 > num_3:
+        print(num_2)
+    else:
+        print(num_3)
+except(ValueError):
+    print('Введите число')
+
 
 
 
